@@ -21,7 +21,7 @@ function ExpenseForm(props) {
 
     props.func(expense.title, expense.amount);
     setExpenses([...expenses, expense]);
-    await axios.post('http://localhost:2000/expenses', { title, amount });
+    await axios.post('https://expense-939y.onrender.com/expenses', { title, amount });
     
     
   }
